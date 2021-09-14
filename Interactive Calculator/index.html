@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- title -->
+
+    <section>
+        <div class="container">
+           <h1 class="bg-warning text-center p-5">SIMPLE CALCULATOR</h1>
+        </div>
+    </section>
+
+
+
+    <!-- darkmode area -->
+
+    <section>
+        <div class="container p-2 bg-warning">
+            <h4>Toggle Dark Mode Here : <button type="button" onclick="darkMode()"class="btn btn-dark"><i class="bi bi-moon"></i></button> </h4>
+        </div>
+       
+    </section>
+
+     <!-- Input Area -->
+     <section>
+        <div class="container p-2 bg-warning ">
+
+            <form id="user" action="#" method="post">
+                <div class="form-group">
+                    <label for="firstUserInput">Input First Number</label>
+                    <input type="number" class="form-control" id="firstUserInput" placeholder="Number">
+                </div>
+                
+                <div class="form-group ">
+                    <label for="secondUserInput">Input Second Number</label>
+                    <input type="number" class="form-control" id="secondUserInput" placeholder="Number">
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- button area -->
+
+    <section>
+        <div class="p-2 container bg-warning d-grid gap-2  ">  <!-- d-grid gap-2 -->
+            <h5 class=" text-center">
+                Select Operator:
+            </h5>
+
+            <div class="p-1 mx-auto " id="buttonArea">  <!-- button area for all buttons -->
+                <button type="button" class="btn btn-primary" id="plus"><i class="bi bi-plus"></i></button>
+                <button type="button" class="btn btn-primary" id="minus"><i class="bi bi-dash"></i></button>
+                <button type="button" class="btn btn-primary" id="multiply"><i class="bi bi-x"></i></button>
+                <button type="button" class="btn btn-primary" id="divide"><i class="bi bi-slash"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Result -->
+
+    <section>
+        <div class="container p-5 bg-warning">
+            <input type="number" class="form-control text-center" readonly id="resultOut" placeholder="Result:">
+        </div>
+    </section>
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
